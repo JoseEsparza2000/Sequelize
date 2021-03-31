@@ -2,6 +2,7 @@ async function fetch_data() {
     const response = await fetch('/api/dining/');
     const dining_halls = await response.json();
     const myTable = document.querySelector('#myTable');
+    console.log(dining_halls);
     const data = dining_halls.data;
   
     data.forEach((item) => {
